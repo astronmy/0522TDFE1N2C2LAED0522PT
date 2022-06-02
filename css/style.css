@@ -1,74 +1,103 @@
-  /*
-  tipo_selector{
-        propiedad1: valor1;
-        propiedad2: valo2;
-  }
-  Tipo elemento o etiqueta*/
-  h3 {
-    /*
-      Puedo definir un color:
-      - paleta disponible de 144 colores
-      - en formato hexadecimal
-      - con funciones como rgb, hsl 
----------------------------------------------
-    6 digitos 0-9 A-F 
-    #6digitos
--------------------------------------------
-    rgb(1 valor, 2 valor, 3valor) 0 - 255
-    blue
-        - rgb(0,0,255)
-------------------------------------------
-    rgba(3valores son idem, 4 alpha)
-    */
-    background-color: lightgrey;
-    color: rgba(0, 0, 255, 0.812);
-    font-size: 45px;
-    font-style: italic;
-    font-weight: bold;
-    text-align: center;
-    text-decoration: underline;
-    text-transform: uppercase;
-  }
-  p{
-    color: blue;
-  }
 
-  p{
-    color:green;
-    text-align: center;
-  }
-  
-  body {
-    background-color: lightgray;
-  }
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,200;0,400;0,900;1,200;1,400;1,900&display=swap');
 
-  /* selector de clase
-  
-    .nombre{
-        propiedad1: valor1;
-    }
-  
-  */
-  .text-left{
-    text-align: left;
-  }
+body{
+  font-family: 'Poppins', monospace;
+}
+h1{
+  font-weight: 200;
+  text-align: center;
+  font-family: 'Courier New', Courier, monospace;
+}
+/*
+  background-repeat:
+  - repeat      (por defecto)
+  - no-repeat   (se imprime una unica vez sin
+  repeticion)
+  - repeat-x
+  - repeat-y
+  ------------------------
+  background-position: 
+  (x , y)
+  - top, left, right, bottom
+  - pixeles
+  ------------------------
+  background-size: 
+  (200px 300px)
+  -auto      (valor defecto)
+  -cover     (cubre el 100% del fondo y muestra
+  la mayor cantidad posible de la imagen) 
+  -contain   (  )
 
-  .text-right{
-    text-align: right;
-  }
-  
-  /* Selector de ID 
-    #nombreDelId{
-      propiedad: valor
-    }
+*/
+.contenedor{
+  background-color: salmon;
+  background-image: url('../img/sun.png');
+  background-repeat: repeat-x;
+  background-position: 10px 100px;
+  background-size: 15%;
+}
 
-  */
-  #segundo{
-    color: crimson;
-  }
+.contenedor-dos{
+  background-color: salmon;
+  background-image: url('../img/bg.jpg');
+  background-position: top;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
 
-  #parrafo2{
-    text-align: left;
-  }
+/*
+    shortHand: una propiedad abreviada
+    background-position: x y
+    --------------------------
+    background-position-x: ;
+    background-position-y: ;
+*/
+.contenedor-tres{
+  background-color: salmon;
+  background-image: url('../img/sun.png');
+  background-position-x: 50px;
+  background-position-y: 150px;
+  background-repeat: no-repeat;
+}
 
- 
+/*
+  shortHand
+  background:
+  -----------------
+  background-color 
+  background-image 
+  background-repeat 
+  background-position
+*/
+.contenedor-cuatro{
+  background: 
+  center
+  no-repeat
+  url('../img/sun.png')
+  salmon 
+}
+
+.contenedor-cinco{
+  background-color: salmon;
+  background-image: 
+  url('../img/sun.png'),
+  url('../img/sun.png'),
+  url('../img/bg.jpg');
+  background-position: 
+  center,
+  center,
+  top;
+  background-repeat: 
+  repeat-x,
+  repeat-y,
+  no-repeat;
+  background-size: 
+  auto,
+  auto,
+  cover;
+}
+
+.fijar-imagen {
+  background-attachment: fixed;
+}
