@@ -1,103 +1,57 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,200;0,400;0,700;1,200;1,400;1,900&display=swap');
 
-@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,200;0,400;0,900;1,200;1,400;1,900&display=swap');
+@import url("https://use.fontawesome.com/releases/v6.1.1/css/all.css");
 
 body{
-  font-family: 'Poppins', monospace;
+  font-family: 'Poppins', sans-serif;
 }
-h1{
-  font-weight: 200;
+span{
+  font-weight: 800;
+}
+
+.cabecera-uno {
   text-align: center;
-  font-family: 'Courier New', Courier, monospace;
-}
-/*
-  background-repeat:
-  - repeat      (por defecto)
-  - no-repeat   (se imprime una unica vez sin
-  repeticion)
-  - repeat-x
-  - repeat-y
-  ------------------------
-  background-position: 
-  (x , y)
-  - top, left, right, bottom
-  - pixeles
-  ------------------------
-  background-size: 
-  (200px 300px)
-  -auto      (valor defecto)
-  -cover     (cubre el 100% del fondo y muestra
-  la mayor cantidad posible de la imagen) 
-  -contain   (  )
-
-*/
-.contenedor{
-  background-color: salmon;
-  background-image: url('../img/sun.png');
-  background-repeat: repeat-x;
-  background-position: 10px 100px;
-  background-size: 15%;
+  /* object-fit: contain; */
 }
 
-.contenedor-dos{
-  background-color: salmon;
-  background-image: url('../img/bg.jpg');
-  background-position: top;
+.cabecera-dos {
+  background-color: #E6E6E6;
+  background-image: url("../img/logo_batman.png");
   background-repeat: no-repeat;
-  background-size: cover;
+  background-position: center;
+  /*spoiler del lunes*/
+  height: 160px;
 }
 
-/*
-    shortHand: una propiedad abreviada
-    background-position: x y
-    --------------------------
-    background-position-x: ;
-    background-position-y: ;
-*/
-.contenedor-tres{
-  background-color: salmon;
-  background-image: url('../img/sun.png');
-  background-position-x: 50px;
-  background-position-y: 150px;
-  background-repeat: no-repeat;
+.titulo , .titulo-seccion{
+  background-color: #C4C4C4;
+  color: #005677;
+  text-transform: uppercase;
 }
 
-/*
-  shortHand
-  background:
-  -----------------
-  background-color 
-  background-image 
-  background-repeat 
-  background-position
-*/
-.contenedor-cuatro{
-  background: 
-  center
-  no-repeat
-  url('../img/sun.png')
-  salmon 
+.titulo {
+  letter-spacing: 8px;
+  text-align: center;
+}
+.titulo-seccion{
+  letter-spacing: 5px;
+}
+.lista-none {
+  list-style-type: none;
+}
+.pie {
+  color: white;
+  font-size: 20px;
+  background-color: #005677;
+  height: 80px;
+  text-align: center;
+}
+.pie span{
+    line-height: 80px;
+}
+.pie span a{
+  color: white;
+  text-decoration: none;
 }
 
-.contenedor-cinco{
-  background-color: salmon;
-  background-image: 
-  url('../img/sun.png'),
-  url('../img/sun.png'),
-  url('../img/bg.jpg');
-  background-position: 
-  center,
-  center,
-  top;
-  background-repeat: 
-  repeat-x,
-  repeat-y,
-  no-repeat;
-  background-size: 
-  auto,
-  auto,
-  cover;
-}
 
-.fijar-imagen {
-  background-attachment: fixed;
-}
