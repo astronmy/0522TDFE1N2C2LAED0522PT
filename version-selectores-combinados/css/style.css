@@ -1,0 +1,108 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&display=swap');
+
+:root {
+  --colorPrimario: #00669F;
+  --colorSecundario: #1CD1B0;
+  --colorTerciario: #F3F3F3;
+  --sombra: 0px 10px 7px rgba(0, 0, 0, 0.25);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #fff;
+  font-family: 'Roboto', sans-serif;
+}
+
+header {
+  background-color: var(--colorPrimario);
+  box-shadow: var(--sombra);
+  height: 140px;
+  width: 100%;
+
+  position: sticky;
+  top: 0;
+  z-index: 1;
+}
+
+header div{
+  background-color: var(--colorSecundario);
+  height: 38px;
+}
+header div span{
+  font-size: 17px;
+  font-weight: 400;
+  line-height: 17px;
+  margin: 10px;
+}
+
+header h1{
+  font-size: 40px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 47px;
+  padding: 28px;
+}
+section{
+  width: 95%;
+  margin: 40px auto;
+}
+
+section article{
+  background-color: var(--colorTerciario);
+  border-top-left-radius: 16px;
+  border-top-right-radius: 16px;
+  /*border-radius: 16px 16px 0px 0px;*/
+  display: inline-block;
+  height: 530px;
+  margin: 10px;
+  width: 300px;
+}
+section article figure{
+  height: 194px;
+  width: 100%;
+  position: relative;
+}
+section article div{
+  text-align: center;
+  font-weight: normal;
+  position: relative;
+}
+
+section article div h2{
+  font-size: 30px;
+  font-weight: normal;
+  line-height: 30px;
+  margin-top: 70px;
+}
+section article div img{
+  position: absolute;
+  border-radius: 50%;
+  left: 30%;
+  top: -50%;
+}
+section article div p{
+  padding: 16px;
+  text-align: justify;
+}
+section article div a{
+  background-color: var(--colorPrimario);
+  border-radius: 5px;
+  color: #fff;
+  display: block;
+  height: 50px;
+  margin: 10px auto;
+  padding: 12px;
+  text-decoration: none;
+  width: 130px;
+}
+
+.corazon {
+  position: absolute;
+  left: 5%;
+  top: 10%;
+}
