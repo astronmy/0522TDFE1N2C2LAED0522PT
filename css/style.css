@@ -1,53 +1,180 @@
-*{
+* {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
 
-html{
-  font-size: 62.5%;
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
 }
-h2{
+
+.container {
+  border: 1px solid red;
+  width: 80%;
+  height: 300px;
+}
+
+/* .box{
+  background-color: crimson;
+  width: 80px;
+  height: 80px;
+} */
+/*
+    selector:nombre {
+      propiedad a modificar...
+    }
+*/
+/* .box:hover{
+  background-color: yellow;
+}
+.box:active{
+  background-color: blue;
+} */
+input[type="text"] {
+  font-size: 1.2rem;
+}
+
+input[type="checkbox"]:checked {
+  box-shadow: 0 0 0 3px hotpink;
+}
+
+input:focus {
+  background-color: gray;
+}
+input::placeholder{
+  color: orange;
+}
+
+form {
+  height: 100px;
+}
+
+form:focus-within {
+  background-color: blue;
+}
+
+h4 {
+  font-size: 1.8rem;
   text-align: center;
 }
 
-.container{
-  margin: 2rem auto;
+h4:not(.title) {
+  text-align: left;
 }
 
-.form{
-  align-content: center;
-  background-color: tomato;
-  border-radius: 1rem;
-  display: flex;
-  flex-direction: column;
-  gap: 1rem;
-  margin: 2rem auto;
-  padding: 2rem;
-  width: 50%;
+.container {
+  padding: 10px 0;
+  border: 4px solid black;
 }
-.form__label{
-  font-size: 1.8rem;
+
+.box {
+  background: tomato;
+  width: 60px;
+  height: 60px;
+  margin: 10px 0;
+  margin-left: 5px;
+  text-align: center;
+  line-height: 60px;
   color: white;
-  font-weight: 600;
+  font-weight: bold;
 }
-.form__input{
-  width: 50%;
-  border: none;
-  outline: none;
+section .box{
+  margin-left: 2rem;
+}
+/*
+ Only Of Type
+----------------------------------------------------
+  :only-of-type  => selecciona a los elementos unicos (en su tipo ejemplo: unico div)
+                   en su seccion o su padre
+
+    .box:only-of-type  (unico elemento con esa clase)
+
+ First of Type
+----------------------------------------------------------
+  :first-of-type => selecciona el primer elemento de su TIPO en su contenedor 
+
+ Last of Type
+-------------------------------------------------------------
+  :last-of-type  => selecciona al ultimo elemento de su tipo
+
+
+  Nested of type
+------------------------------------------------------------
+  :nth-of-type(n)   => Selecciona a los elementos de su TIPO en el orden dado por N
+            --odd   => Selecciona impares
+            --even  => Selecciona pares
+
+            Puedo operar con N y hacer secuencia de valores. Comienza en 0
+            ver => 2n
+                   2*0=0
+                   2*1=2
+                   2*2=4
+                   2*3=6
+
+    :nth-last-of-type()   => Comienza en orden inverso al anterior
+                           de abajo hacia arriba
+------------------------------------------------------
+
+Nested Child
+
+:only-child{}         => Hijo unico sin hermanos. Es decir el unico en su tipo
+                           sin hermanos que cumpla la condicion
+
+
+:first-child          => Selecciona al primer hijo del contenedor 
+                          (debe estar primero y cumplir la condicion)                          
+
+:last-child           => Ultimo elemento de su padre que respete la condicion                        
+
+
+*/
+
+/* .box:last-child {
+  background-color: crimson;
+} */
+
+.box:nth-child(3) {
+  background-color: crimson;
+}
+
+.parrafo{
+  font-size: 2rem;
+  padding: 2rem;
+}
+.parrafo::selection{
+  background-color: blue;
+  color: white;
+}
+.parrafo::first-line{
   text-transform: uppercase;
 }
-fieldset{
-  border: none;
-  display: flex;
-  flex-direction: column;
-  gap: 1rem;
-  justify-content: center;
-  padding: 2rem;
-  color: white;
+.parrafo::first-letter{
+  font-size: 4rem;
+  font-style: italic;
+  color: brown;
+  font-weight: bold;
 }
-legend{
-  color: white;
-  font-size: 2rem;
+
+.precio{
+  display: block;
+  text-align: center;
+  font-size: 4rem;
+  font-weight: bold;
 }
+
+.precio::before{
+  /* puede recibir texto, url()*/
+  content: "$";
+  
+}
+
+.precio::after{
+  /* puede recibir texto, url()*/
+  content: ".00";
+  
+}
+
+
 

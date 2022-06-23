@@ -5,83 +5,39 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Formularios</title>
+  <title>Pseudoselectores & Pseudoelementos</title>
   <link rel="stylesheet" href="css/style.css">
 </head>
 
 <body>
-  <div class="container">
-    <h2>Login</h2>
-    <!--  
-            Method determina el modo en como viajan los datos
-            GET   =>  Los datos los via en la url
-            POST  =>  Los datos los viajan el body
-        -->
-    <form class="form" action="data.html" method="GET">
-      <fieldset>
-          <legend>Datos Personales</legend>
-          <label for="txt_nombre" class="form__label">Nombre Completo:</label>
-          <input class="form__input" name="nombre" placeholder="Escriba su nombre aqui" type="text" minlength="4"
-            maxlength="10" id="txt_nombre" required>
+  <!-- <div class="container">
+          <div class="box"></div>
+    </div>
+    <h4>Encabezado 1</h4>
+    <h4 class="title">Encabezado 2</h4>
+    <form action="">
+        <input type="text" value="renzvinci">
+        <input type="checkbox" id="tyc">
+        <label for="tyc">Terminos y condiciones</label>
+    </form> -->
 
-          <label form="txt_correo" class="form__label" for="">Correo Electrónico</label>
-          <input class="form__input" type="email" name="correo_electronico" placeholder="Correo electrónico" id="txt_correo"
-            required>
-
-          <label for="txt_documento" class="form__label">Documento/Cedula</label>
-          <input class="form__input" min="20" max="50" type="number" name="documento" placeholder="Documento"
-            id="txt_documento" required>
-
-          <label for="txt_phone" class="form__label">Tel</label>
-          <input class="form__input" pattern="[0-9]{3}-[0-9]{5}" type="tel" name="telefono" placeholder="123-90122"
-            id="txt_phone" required>
-          <input type="hidden" name="oculto" value="no mires">
-      </fieldset>
-      <fieldset>
-        <legend>Otros Datos </legend>
-        <label for="txt_file" class="form__label">Archivo:</label>
-        <input class="form__input" type="file" name="archivo" id="txt_file" accept=".jpg, .pdf, .png, .xlsx" multiple
-          required>
-
-        <label for="txt_fecha" class="form__label">Date</label>
-        <input class="form__input" type="date" min="2022-06-17" max="2022-06-19" name="fecha_nacimiento" id="txt_fecha"
-          required>
-
-        <label for="color" class="form__label">color</label>
-        <input class="form__input" type="color" name="color" id="txt_fecha" required>
-
-
-        <label for="time" class="form__label">Time</label>
-        <input class="form__input" type="time" name="time" id="time" required>
-
-        <label for="time" class="form__label">Combobox</label>
-        <select name="pais">
-          <optgroup label="America del Sur">
-            <option value="ARG">Argentina</option>
-            <option value="COL">Colombia</option>
-            <option value="PE">Perú</option>
-          </optgroup>
-          <optgroup label="Norte America">
-            <option value="US">Estados Unidos</option>
-          </optgroup>
-        </select>
-
-        <div>
-          <input type="checkbox" name="tyc" id="tyc" required>
-          <label for="tyc" class="form__label">Acepta los términos y condiciones</label>
-        </div>
-      </fieldset>
-
-      <button type="submit">
-          Enviar Datos
-      </button>
-      <button type="reset">Limpiar Campos</button>
-
-      <input type="submit" value="Enviar Datos I">
-      <input type="reset" value="Limpiar Campos I">
-
-    </form>
-  </div>
+  <div class="box">1d</div>
+  <div class="box">2d</div>
+  <p class="box">1p</p>
+  <section class="container">
+    <div class="box">1.1 d</div>
+    <div class="box">1.2 d</div>
+    <p class="box">1.1p</p>
+  </section>
+  <p class="box">2p</p>
+  <div class="box ">3 d</div>
+  <div class="box">4 d</div>
+  
+  <section class="container">
+    <div class="box">5.1 d</div>
+    <p class="box">5.1 p</p>
+  </section>
+  <div class="box">4 d</div>
 </body>
 
 </html>
