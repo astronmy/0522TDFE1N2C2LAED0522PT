@@ -1,60 +1,61 @@
 * {
-  box-sizing: border-box;
   margin: 0;
   padding: 0;
+  box-sizing: border-box;
+}
+
+header {
+  margin-bottom: 2rem;
+}
+header nav {
+  padding-top: 2rem;
+}
+header nav ul {
+  list-style: none;
+  display: flex;
+  gap: 1rem;
+  justify-content: center;
+}
+header nav ul a {
+  background-color: crimson;
+  border-radius: 5%;
+  color: white;
+  padding: 1.5rem;
   text-decoration: none;
+  transition: all 0.5ms;
+}
+header nav ul a:hover {
+  background-color: blue;
 }
 
-.container{
-  /* display: flex;
-  gap: 1rem; */
-  height: 60vh;
-  margin: 50px auto;
-  outline: 2px solid crimson;
-  width: 90%;
-  /* overflow: hidden; */
+.btn-alert {
+  background-color: crimson;
+  border: none;
+  color: white;
+  display: block;
+  height: 30px;
+  margin: 1rem auto;
+  width: 120px;
 }
 
-.box {
-  background: steelblue;
-  width: 100px;
-  height: 100px;
-  margin-top: 12px;
-  /* transition: propiedad (all/none) tiempo (segundos (s)
-                 milisegundos (ms);
-     transition: background-color 0.5s; 
-     transition-timing-function: cubic-bezier(.79,.2,.1,1.06);
-  */
-  transition-property: background-color, transform;
-  transition-duration: 2s;
-/*   transition-timing-function: ease-in-out, cubic-bezier(.79,.2,.1,1.06);
-   */
-  /* transition-delay: 3s; */
-}
-
-.container:hover .box{
+.btn-warning {
   background-color: yellow;
-  transform: translate(400px) rotate(3turn) scale(0.5);
-  /* transform: scale(3); */
-  /* transform: scaleX(3); */
-  /* transform: scaleY(3); */
-  /* transform:rotate(720deg) */
-  /* transform:skew()*/
-  /* transform:skewY(45deg); */
-  /* transform: translateY(300px); */
-  /* transform: translate(300px, 300px); */
-  transform: translate(650px) rotate(3turn) scale(0.5);
-}
-.container .box:nth-child(1){
-  transition-timing-function: linear;
-}
-.container .box:nth-child(2){
-  transition-timing-function: ease;
-}
-.container .box:nth-child(3){
-  transition-timing-function: ease-in;
-}
-.container .box:nth-child(4){
-  transition-timing-function: ease-in-out;
+  border: none;
+  color: white;
+  display: block;
+  height: 50px;
+  margin: 1rem auto;
+  width: 150px;
 }
 
+.btn-success {
+  background-color: green;
+  border: none;
+  color: white;
+  display: block;
+  height: 50px;
+  margin: 1rem auto;
+  width: 150px;
+}
+
+/*# sourceMappingURL=style.css.map */
