@@ -13,11 +13,20 @@
 }
 
 .btn-alert{
-  @include makeButton(crimson,white,120px,30px)
+  @include makeButton(crimson,white,120px,40px)
 }
 .btn-warning{
   @include makeButton(yellow,white)
 }
 .btn-success{
   @include makeButton(green,white)
+}
+
+
+
+.header{
+    margin: 1rem;
+    &__logo{
+      width: 100px;
+    }
 }
