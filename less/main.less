@@ -1,0 +1,63 @@
+@primaryColor: crimson;
+@secondaryColor: tomato;
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+header {
+  margin-bottom: 2rem;
+
+  nav {
+    padding-top: 2rem;
+
+    ul {
+      list-style: none;
+      display: flex;
+      gap: 1rem;
+      justify-content: center;
+
+      a {
+        background-color: @primaryColor;
+        border-radius: 5%;
+        color: white;
+        padding: 1.5rem;
+        text-decoration: none;
+        transition: all 0.5ms;
+
+        &:hover {
+          background-color: @secondaryColor;
+        }
+      }
+    }
+  }
+}
+/* mixin en less*/
+.setBtn(@bgColor, @txtColor: white){
+  background-color: @bgColor;
+  color: @txtColor;
+}
+
+.btn_padre {
+  display: block;
+  height: 50px;
+  margin: 1.2rem auto;
+  text-align: center;
+  width: 100px;
+}
+
+.btn_border{
+  border: 1px solid black;
+}
+
+.btn-alert:extend(.btn_padre) {
+  .setBtn(crimson)
+}
+.btn-warning:extend(.btn_padre, .btn_border) {
+  .setBtn(yellow, black)
+}
+.btn-success:extend(.btn_padre) {
+  .setBtn(green, grey)
+}

@@ -1,32 +1,57 @@
-@import 'variables';
-@import 'general';
-@import 'header';
 
-@mixin makeButton($bgColor, $txtColor, $width:150px, $height:50px) {
-  background-color: $bgColor;
-  border: none;
-  color: $txtColor;
+@import "mixins";
+@import "general";
+@import "header";
+
+.btn_padre {
   display: block;
-  height: $height;
-  margin: 1rem auto;
-  width: $width;
+  height: 50px;
+  margin: 1.2rem auto;
+  text-align: center;
+  width: 100px;
 }
 
-.btn-alert{
-  @include makeButton(crimson,white,120px,40px)
+.btn-alert {
+  @extend .btn_padre;
+  @include setBtn(crimson);
 }
-.btn-warning{
-  @include makeButton(yellow,white)
+.btn-warning {
+  @extend .btn_padre;
+  @include setBtn(yellow, black);
 }
-.btn-success{
-  @include makeButton(green,white)
+.btn-success {
+  @extend .btn_padre;
+  @include setBtn(green, black);
 }
 
+.header {
+  margin: 1rem;
+  &__logo {
+    width: 100px;
+  }
+}
 
+$entorno: nada;
+p {
+  @if $entorno == desarrollo {
+    font-size: 4rem;
+    color: blue;
+  } @else if $entorno == produccion {
+    font-size: 2rem;
+    color: green;
+  } @else {
+    font-size: 1rem;
+    color: black;
+  }
+}
 
-.header{
-    margin: 1rem;
-    &__logo{
-      width: 100px;
+$heroes: batman, superman, wonderwoman, robin;
+
+@each $heroe in $heroes{
+    .bg-#{$heroe}{
+      background-image: url("images/superheroes/#{$heroe}.png");
+      background-position: center;
+      background-size: cover;
+      background-repeat: no-repeat;
     }
 }

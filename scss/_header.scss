@@ -1,36 +1,33 @@
+ @use 'variables' as *;
 
-header{
+header {
   margin-bottom: 2rem;
 
   @media screen and (max-width: 300px) {
-      margin-bottom: 1rem;
+    margin-bottom: 1rem;
   }
 
-  nav{
-     padding-top: 2rem;
+  nav {
+    padding-top: 2rem;
 
-     ul{
-        list-style: none;
-        display: flex;
-        gap: 1rem;
-        justify-content: center;
+    ul {
+      list-style: none;
+      display: flex;
+      gap: 1rem;
+      justify-content: center;
 
-        a {
-          background-color: $primaryColor;
-          border-radius: 5%;
-          color: white;
-          padding: 1.5rem;
-          text-decoration: none;
-          transition: all .5ms;
+      a {
+        background-color: $primaryColor;
+        border-radius: 5%;
+        color: white;
+        padding: 1.5rem;
+        text-decoration: none;
+        transition: all 0.5ms;
 
-          &:hover{
-            background-color: $secondaryColor;
-            
-          }
+        &:hover {
+          background-color: $secondaryColor;
         }
-
-
-     }
+      }
+    }
   }
-
 }

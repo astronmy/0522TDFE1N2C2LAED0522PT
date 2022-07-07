@@ -33,34 +33,27 @@ header nav ul a:hover {
   background-color: blue;
 }
 
+.btn_padre, .btn-success, .btn-warning, .btn-alert {
+  display: block;
+  height: 50px;
+  margin: 1.2rem auto;
+  text-align: center;
+  width: 100px;
+}
+
 .btn-alert {
   background-color: crimson;
-  border: none;
   color: white;
-  display: block;
-  height: 40px;
-  margin: 1rem auto;
-  width: 120px;
 }
 
 .btn-warning {
   background-color: yellow;
-  border: none;
-  color: white;
-  display: block;
-  height: 50px;
-  margin: 1rem auto;
-  width: 150px;
+  color: black;
 }
 
 .btn-success {
   background-color: green;
-  border: none;
-  color: white;
-  display: block;
-  height: 50px;
-  margin: 1rem auto;
-  width: 150px;
+  color: black;
 }
 
 .header {
@@ -68,4 +61,37 @@ header nav ul a:hover {
 }
 .header__logo {
   width: 100px;
+}
+
+p {
+  font-size: 1rem;
+  color: black;
+}
+
+.bg-batman {
+  background-image: url("images/superheroes/batman.png");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.bg-superman {
+  background-image: url("images/superheroes/superman.png");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.bg-wonderwoman {
+  background-image: url("images/superheroes/wonderwoman.png");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.bg-robin {
+  background-image: url("images/superheroes/robin.png");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
 }/*# sourceMappingURL=style.css.map */

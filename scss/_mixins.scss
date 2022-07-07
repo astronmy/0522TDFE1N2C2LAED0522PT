@@ -1,0 +1,14 @@
+@mixin makeButton($bgColor, $txtColor, $width:150px, $height:50px) {
+  background-color: $bgColor;
+  border: none;
+  color: $txtColor;
+  display: block;
+  height: $height;
+  margin: 1.2rem auto;
+  width: $width;
+}
+
+@mixin setBtn($bgColor, $txtColor:white) {
+  background-color: $bgColor;
+  color: $txtColor;
+}
