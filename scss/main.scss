@@ -1,0 +1,13 @@
+$primary: crimson;
+
+$grid-breakpoints: (
+  xs: 0,
+  sm: 576px,
+  md: 768px,
+  lg: 800px,
+  xl: 1200px,
+  xxl: 1400px
+);
+
+
+@import "../node_modules/bootstrap/scss/bootstrap";
